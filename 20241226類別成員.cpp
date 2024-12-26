@@ -29,3 +29,21 @@ bool myTime::setTime(int h,int m){
 void myTime::printTime(){
 	cout<<hour<<":"<<minute<<"\n";
 }
+
+main(){
+	myTime open, close, now;
+	int h, m;
+	open.setTime(10,30);
+	close.setTime(17,30);
+	now.setTime(13,28);
+	cout<<"張開時間";
+	open.printTime();
+	cout<<"結束時間";
+	close.printTime();
+	cout<<"現在時間";
+	h =now.getHour();
+	m =now.getMinure();
+	cout<< h<<":"<<m<<"\n";
+	
+	
+}
